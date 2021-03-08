@@ -8,3 +8,18 @@ Currently, it has:
 - [x] A text block
 - [ ] An embed
 - [ ] A vertical masonry image grid
+
+# To implement, ensure:
+
+- CSS Reset is set in nuxt.config.js > css
+
+# How to style
+
+Slice styles are set in the layout files, using `::v-deep`:
+
+```scss
+::v-deep {
+  .slice-text-block {
+    color: red;
+  }
+```

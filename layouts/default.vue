@@ -6,41 +6,48 @@
   </div>
 </template>
 
-<style lang="scss">
-html {
+<style lang="scss" scoped>
+.layout-default-outer {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 18px;
-}
-
-.layout-default-outer {
   display: flex;
   width: 100vw;
   justify-content: center;
-  padding: 20px 10px;
 }
 
 .layout-default-inner {
-  width: 100%;
   max-width: 900px;
+  padding: 20px 10px;
 }
 
-.slice-text-block {
-  & > * {
-    padding-bottom: 1em;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.slice-image-row {
-  .slice-image-row-caption {
+::v-deep {
+  // Style slices in here
+  .slice-text-block {
     & > * {
-      padding: 0.5em 0 1em;
+      padding-bottom: 1em;
     }
-    text-align: center;
-    color: grey;
-    font-style: oblique;
-    font-weight: 200;
-    font-size: 0.9rem;
+    color: red;
+  }
+
+  .slice-image-row {
+    .slice-image-row-caption {
+      & > * {
+        padding: 0.5em 0 1em;
+      }
+      text-align: center;
+      color: grey;
+      font-style: oblique;
+      font-weight: 200;
+      font-size: 0.9rem;
+    }
   }
 }
 
