@@ -1,0 +1,27 @@
+{
+  "TextBlock": {
+    "primary": {
+      "content": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 2
+        }
+      }
+    }
+  },
+  "ImageRow": {
+    "items": {
+      "image": {
+        "content": "https://images.prismic.io/claire/d8ad0e11-e50f-4775-81dc-66ee77e3b8fd_objects3.jpg"
+      }
+    },
+    "primary": {
+      "caption": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  }
+}
