@@ -22,4 +22,5 @@ Slice styles are set in the layout files, using `::v-deep`:
   .slice-text-block {
     color: red;
   }
+}
 ```
