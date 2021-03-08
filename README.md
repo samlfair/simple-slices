@@ -1,20 +1,10 @@
-# working-project
+# Sam's Simple Slices
 
-## Build Setup
+This is the working project for developing a Slice Library with Prismic and Nuxt.
 
-```bash
-# install dependencies
-$ npm install
+Currently, it has:
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+- [x] An Imgix masonry image row
+- [x] A text block
+- [ ] An embed
+- [ ] A vertical masonry image grid
