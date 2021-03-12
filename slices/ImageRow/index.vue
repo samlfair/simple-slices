@@ -3,6 +3,7 @@
     <div class="image-row" :style="{ gap: `10px`, marginBottom: `7px` }">
       <div
         v-for="(item, i) in slice.items"
+        class="image"
         :key="`slice-item-${i}`"
         :style="{
           aspectRatio:
@@ -10,7 +11,12 @@
           flex: item.image.dimensions.width / item.image.dimensions.height
         }"
       >
-        <Imgix :imageUrl="item.image.url" />
+        <Imgix
+          :alt="item.image.alt"
+          :width="item.image.dimensions.width"
+          :height="item.image.dimensions.height"
+          :imageUrl="item.image.url"
+        />
       </div>
     </div>
     <prismic-rich-text
@@ -41,14 +47,7 @@ export default {
 };
 </script>
 
-<style>
-img {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  display: block;
-}
-
+<style scoped>
 .image-row {
   width: 100%;
   display: flex;

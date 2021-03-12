@@ -1,6 +1,12 @@
 <template>
   <div ref="image">
-    <img :style="{ width: '100%' }" :src="root + `?w=` + width" alt="" />
+    <img
+      :width="width"
+      :height="height"
+      :style="{ width: '100%' }"
+      :src="root + `?w=` + width"
+      :alt="alt"
+    />
   </div>
 </template>
 
@@ -8,7 +14,10 @@
 export default {
   name: "Imgix",
   props: {
-    imageUrl: String
+    imageUrl: String,
+    width: String,
+    height: String,
+    alt: String
   },
   data() {
     return {
@@ -37,3 +46,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>

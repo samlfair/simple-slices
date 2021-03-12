@@ -17,6 +17,7 @@
 }
 
 .layout-default-inner {
+  width: 100%;
   max-width: 900px;
   padding: 20px 10px;
 }
@@ -53,6 +54,9 @@
       font-style: oblique;
       font-weight: 200;
       font-size: 0.9rem;
+    }
+    .image {
+      background: lightgrey;
     }
   }
 }
