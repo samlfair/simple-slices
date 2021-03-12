@@ -7,7 +7,11 @@ Currently, it has:
 - [x] An Imgix masonry image row
 - [x] A text block
 - [ ] An embed
-- [ ] A vertical masonry image grid
+- [ ] A vertical image masonry
+- [ ] Text and image banner
+- [ ] Image with caption at side
+- [ ] Squiggly spacer
+- [ ] Image grid
 
 # To implement, ensure:
 

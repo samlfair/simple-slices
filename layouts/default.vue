@@ -30,17 +30,23 @@
 
 ::v-deep {
   // Style slices in here
+  .slice-post-feed {
+    .post {
+      border: 1px solid black;
+      padding: 1em 1em 0;
+      margin: 1em 0;
+    }
+  }
   .slice-text-block {
     & > * {
       padding-bottom: 1em;
     }
-    color: red;
   }
 
   .slice-image-row {
     .slice-image-row-caption {
       & > * {
-        padding: 0.5em 0 1em;
+        margin: 1em 0 1em;
       }
       text-align: center;
       color: grey;
