@@ -1,10 +1,10 @@
 <template>
   <div ref="image">
     <img
-      :width="width"
+      :width="offsetWidth"
       :height="height"
       :style="{ width: '100%' }"
-      :src="root + `?w=` + width"
+      :src="root + `?w=` + offsetWidth"
       :alt="alt"
     />
   </div>
@@ -15,14 +15,14 @@ export default {
   name: "Imgix",
   props: {
     imageUrl: String,
-    width: String,
-    height: String,
+    width: Number,
+    height: Number,
     alt: String
   },
   data() {
     return {
       blur: null,
-      width: null
+      offsetWidth: null
     };
   },
   computed: {
@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     getWidth() {
-      this.width = this.$refs["image"].offsetWidth;
+      this.offsetWidth = this.$refs["image"].offsetWidth;
     }
   }
 };

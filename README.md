@@ -7,6 +7,7 @@ Currently, it has:
 - [x] An Imgix masonry image row
 - [x] A text block
 - [ ] Add gap spacing to masonry row
+- [ ] Remove grey from bottom of images
 - [ ] An embed
 - [ ] A vertical image masonry
 - [ ] Text and image banner
