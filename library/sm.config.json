@@ -1,0 +1,17 @@
+{
+  "libraryName": "Sam's Slices",
+  "framework": "nuxt",
+  "gitUrl": "//github.com/samlfair/vue-essential-slices",
+  "pathToLibrary": "src",
+  "dependencies": [],
+  "css": ["vue-essential-slices/src/styles/styles.scss"],
+  "script": [
+    {
+      "src": "https://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.min.js"
+    }
+  ],
+  "devDependencies": ["node-sass", "sass-loader"]
+}
